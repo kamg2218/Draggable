@@ -33,8 +33,6 @@ const Drag = ({ child }: { child: JSX.Element }) => {
   }
   const handleDragStart = (event: any) => {
     console.log('DragStart')
-    const img = new Image();
-    event.dataTransfer.setDragImage(img, 0, 0);
     gap[1]([event.clientX - x[0], event.clientY - y[0]]);
   }
   return (
